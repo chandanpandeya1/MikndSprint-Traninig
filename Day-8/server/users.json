@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alex",
+      "email": "alex@gmail.com",
+      "address": "Uk"
+    },
+    {
+      "id": "2",
+      "name": "Bobby",
+      "email": "bob@email.com",
+      "address": "UK"
+    },
+    {
+      "id": "3",
+      "name": "catty",
+      "email": "catty@email.com",
+      "address": "Europe",
+      "website": "www.sdnsj.com"
+    },
+    {
+      "name": "doe",
+      "address": "nepal",
+      "email": "doe@gmail.com",
+      "id": "4"
+    }
+  ]
+}

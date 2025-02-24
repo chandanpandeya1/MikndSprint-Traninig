@@ -1,0 +1,45 @@
+SELECTION- select specific rows
+
+PROJECTION- select specific columns
+
+-------------------------------------------------------
+
+DDL- create, alter, drop, truncate
+DML - insert, update delete
+DCL - grant, revoke
+In dcl we have to follow ACID properties
+
+DQL - select
+TCL- commit, rollback, savepoint
+
+-------------------------------------------------------
+data types in sql
+
+1. Numeric data type- int, float, decimal(p,s)
+2. String data type- char, varchar, text
+3. Date and Time data types- date, time, datetime, timestamp:-similar to datetime can be used to automatically track changes in data
+4. Boolean data type- Boolean
+
+-------------------------------------------------------
+select 1+1 as result;
+here, for alias we are not using quote on result
+
+but
+select upper('Hello World') as 'Upper Case';
+
+here we are using
+
+if we want to give space in alias then use quotes.
+
+------------------------------------------------------
+by default, sql sorts in ascending order
+
+-------------------------------------------------------
+after executing, FK gives the symbol of MUL
+
+------------------------------------------------------
+to remove common values, use union
+-----------------------------------------------------
+union all will come up with the duplicates
+-------------------------------------------------------
+

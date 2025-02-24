@@ -1,0 +1,267 @@
+JAVA is oo prog lang
+It is WORA (Write once, run anywhere), so it is platform independent
+Highly secured framework
+
+System.out.println - System is a class, out is a variable, println is a method 
+Pacakge- beign with org or com, later organisation, proj name and basics 
+Should be in lower case
+Ex: com.mindsprint.project1.basics
+
+  
+Class is always start frm capital letter, variable should be like a CamelCase Notataion
+
+
+Default pacakges: 
+java.lang- default imported
+Java.io - input/output
+Java.util - scanner, time and date, calendar
+
+Variables:
+• Variable Declaration: This is when you tell Java that you need a variable of a certain type.
+• Variable Initialization: This is when you assign a value to the declared variable.
+• Variable Types: Java has several types of variables including primitive data types (like int, float, char, etc.) and reference types (like objects).
+
+
+Syntax:
+java
+// Syntax for declaring a variable
+type variableName;
+// Syntax for initializing a variable
+variableName = value;
+// Combined declaration and initialization
+type variableName = value;
+
+
+EXAMPLE:
+// Declare an integer variable
+        int age = 25;
+// Declare a double variable
+        double price = 19.99;
+// Declare a char variable
+        char grade = 'A';
+// Declare a boolean variable
+        boolean isStudent = true
+
+
+• OPERATORS
+1. Arithmetic Operators:
+These operators are used to perform basic arithmetic operations.
+	• + : Addition
+	• - : Subtraction
+	• * : Multiplication
+	• / : Division
+	• % : Modulus (remainder of division)
+Example:
+java
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        
+        System.out.println("a + b = " + (a + b)); // Output: 15
+        System.out.println("a - b = " + (a - b)); // Output: 5
+        System.out.println("a * b = " + (a * b)); // Output: 50
+        System.out.println("a / b = " + (a / b)); // Output: 2
+        System.out.println("a % b = " + (a % b)); // Output: 0
+    }
+
+2. Relational Operators:
+These operators are used to compare two values.
+	• == : Equal to
+	• != : Not equal to
+	• > : Greater than
+	• < : Less than
+	• >= : Greater than or equal to
+	• <= : Less than or equal to
+Example:
+java
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+System.out.println("a == b: " + (a == b)); // Output: false
+        System.out.println("a != b: " + (a != b)); // Output: true
+        System.out.println("a > b: " + (a > b));   // Output: true
+        System.out.println("a < b: " + (a < b));   // Output: false
+        System.out.println("a >= b: " + (a >= b)); // Output: true
+        System.out.println("a <= b: " + (a <= b)); // Output: false
+    }
+}
+
+3. Logical Operators:
+These operators are used to combine multiple boolean expressions.
+	• && : Logical AND
+	• || : Logical OR
+	• ! : Logical NOT
+Example:
+java
+public class Main {
+    public static void main(String[] args) {
+        boolean x = true;
+        boolean y = false;
+System.out.println("x && y: " + (x && y)); // Output: false
+        System.out.println("x || y: " +
+
+
+Array Syntax:
+	• Declaration: type[] arrayName;
+	• Initialization: arrayName = new type[size];
+	• Combined: type[] arrayName = new type[size];
+	• Array Literal: type[] arrayName = {value1, value2, value3, ...};
+ (x || y));
+
+Example:
+// Importing the Arrays class
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an array of integers
+        int[] array = {1, 2, 3, 4, 5};
+
+        // Accessing elements of the array
+        int firstElement = array[0];
+        int secondElement = array[1];
+
+        // Modifying elements of the array
+        array[2] = 10;
+
+        // Printing the array
+        System.out.println("Array: " + Arrays.toString(array));
+        System.out.println("First Element: " + firstElement);
+        System.out.println("Second Element: " + secondElement);
+    }
+}
+
+OOP, or Object-Oriented Programming, is a programming paradigm that uses objects and classes to structure software. It's all about organizing code in a way that makes it more modular, reusable, and easier to manage.
+ four main principles of OOP:
+	1. Encapsulation: This is the concept of wrapping data (variables) and methods (functions) that operate on the data into a single unit, or object. It helps protect the data from outside interference and misuse.
+	2. Abstraction: This principle involves hiding the complex implementation details and showing only the essential features of the object. It helps in reducing programming complexity and effort.
+	3. Inheritance: This allows a new class (child class) to inherit properties and behaviors (methods) from an existing class (parent class). It promotes code reusability and establishes a natural hierarchy between classes.
+	4. Polymorphism: This principle allows objects to be treated as instances of their parent class rather than their actual class. The most common use of polymorphism is when a parent class reference is used to refer to a child class object. It allows for flexibility and the ability to use the same interface for different underlying data types.
+
+
+
+Tasks:
+
+	1. program to create table of 10, fibonacii, odd or even, find largest number of two nos , create an array of numbers and display the original sorted order, create numbers and display the array in reverse order, in one program using scanner for all
+	 
+	package com.mindsprint.project1.conditional;
+	
+	import java.util.Arrays;
+	import java.util.Scanner;
+	
+	public class Task {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	
+	
+	        System.out.println("Table of 10:");
+	        for (int i = 1; i <= 10; i++) {
+	            System.out.println("10 x " + i + " = " + (10 * i));
+	        }
+	
+	
+	        System.out.print("Enter the number of terms for Fibonacci sequence: ");
+	        int n = sc.nextInt();
+	        System.out.println("Fibonacci sequence up to " + n + " terms:");
+	        int a = 0, b = 1;
+	        System.out.print(a + " " + b);
+	        for (int i = 2; i < n; i++) {
+	            int c = a + b;
+	            System.out.print(" " + c);
+	            a = b;
+	            b = c;
+	        }
+	        System.out.println();
+	
+	
+	        System.out.print("Enter a number to check if it's odd or even: ");
+	        int num = sc.nextInt();
+	        System.out.println(num + " is " + (num % 2 == 0 ? "even" : "odd"));
+	
+	
+	        System.out.print("Enter the first number: ");
+	        int num1 = sc.nextInt();
+	        System.out.print("Enter the second number: ");
+	        int num2 = sc.nextInt();
+	        System.out.println("The largest number is: " + Math.max(num1, num2));
+	
+	
+	        System.out.print("Enter the size of the array: ");
+	        int size = sc.nextInt();
+	        int[] array = new int[size];
+	        System.out.println("Enter the elements of the array:");
+	        for (int i = 0; i < size; i++) {
+	            array[i] = sc.nextInt();
+	        }
+	
+	        System.out.println("Original array: " + Arrays.toString(array));
+	        int[] sortedArray = array.clone();
+	        Arrays.sort(sortedArray);
+	        System.out.println("Sorted array: " + Arrays.toString(sortedArray));
+	
+	
+	        System.out.println("Array in reverse order:");
+	        for (int i = size - 1; i >= 0; i--) {
+	            System.out.print(array[i] + " ");
+	        }
+	        System.out.println();
+	    }
+	}
+	
+	2. Program ternary operator to determine whether there's a profit or loss based on selling price and cost price:
+	package com.mindsprint.project1.basics;
+	
+	import java.util.Scanner;
+	
+	public class TernaryExp {
+	    public static void main(String[] args) {
+	        Scanner sc=new Scanner(System.in);
+	        System.out.println("Enter selling price: ");
+	        int sp= sc.nextInt();
+	        System.out.println("Enter Cost Price:");
+	        int cp= sc.nextInt();
+	        String res=(sp>=cp)? "profit: " +(sp-cp): "Loss: " +(cp-sp);
+	        System.out.println(res);
+	    }
+	}
+	
+ 3.  Student grade management system
+package com.mindsprint.project1.Loops;
+
+import java.util.Arrays;
+
+public class Student {
+    String name;
+    int[] grade;
+
+    // A constructor that initializes the student's name and grade
+    public Student(String name, int[] grade) {
+        this.name = name;
+        this.grade = grade;
+    }
+
+    // Method to calculate the average grade
+    public double calculateAverage() {
+        int sum = 0;
+        for (int grade1 : grade) {
+            sum += grade1;
+        }
+        return (double) sum / grade.length;
+    }
+
+    // Method to display the student's information
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Grades: " + Arrays.toString(grade));
+        System.out.println("Average Grade: " + calculateAverage());
+    }
+
+    // Main method
+    public static void main(String[] args) {
+        int[] grades = {85, 90, 78, 92, 88};
+        Student student = new Student("John Doe", grades);
+        student.displayInfo();
+    }
+}

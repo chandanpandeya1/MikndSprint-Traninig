@@ -1,0 +1,28 @@
+Scenario: Developing a Student Management Portal
+
+A college administration has approached your team to develop a Student Management Portal to help manage student records, view courses, and track student attendance.
+
+The solution must have secure login for administrators and provide a user-friendly interface for managing the data.
+
+Divide into 3 sprints
+
+For each spring you can write objective, tasks, success criteria
+
+
+Sprint 1: User Authentication & Dashboard UI (2 Weeks)
+
+Sprint 2: Student and Course Management (3 Weeks)
+
+Sprint 3: Attendance Tracking and Reporting (4 Weeks)
+
+
+Retrospective :
+
+
+Goal 
+
+what went well
+
+What Challenges you have faced 
+
+Improvement
