@@ -1,0 +1,62 @@
+//1. Display Basic Information About the Dataset:
+
+import pandas as pd
+df = pd.read_csv('employee_data.csv')
+print(df.info())
+print(df.describe())
+
+//2. Find the Average Salary in Each Department:
+
+avg_salary_by_dept = df.groupby('Department')['Salary'].mean()
+print(avg_salary_by_dept)
+
+//3. Find the Highest and Lowest Salary in the Company:
+
+highest_salary = df['Salary'].max()
+lowest_salary = df['Salary'].min()
+print(f"Highest Salary: {highest_salary}")
+print(f"Lowest Salary: {lowest_salary}")
+
+//4. Find the Employee with the Maximum Salary:
+
+max_salary_employee = df.loc[df['Salary'].idxmax()]
+print(max_salary_employee)
+
+//5. Count the Number of Employees in Each Department:
+
+employee_count_by_dept = df['Department'].value_counts()
+print(employee_count_by_dept)
+
+//6. Plot a Bar Chart Showing the Number of Employees in Each Department:
+
+import matplotlib.pyplot as plt
+employee_count_by_dept.plot(kind='bar', title='Number of Employees in Each Department')
+plt.xlabel('Department')
+plt.ylabel('Number of Employees')
+plt.show()
+
+//7. Plot a Pie Chart Showing Salary Distribution by Department:
+
+salary_by_dept = df.groupby('Department')['Salary'].sum()
+salary_by_dept.plot(kind='pie', autopct='%1.1f%%', title='Salary Distribution by Department')
+plt.ylabel('')  # Hide the y-label to make the chart cleaner
+plt.show()
+
+//8. Scatter Plot Showing Salary vs Experience:
+
+plt.scatter(df['Experience'], df['Salary'])
+plt.title('Salary vs Experience')
+plt.xlabel('Experience (years)')
+plt.ylabel('Salary')
+plt.show()
+
+//9. Find Employees Who Earn More Than the Average Salary:
+
+average_salary = df['Salary'].mean()
+above_average_salary_employees = df[df['Salary'] > average_salary]
+print(above_average_salary_employees)
+
+//10. Sort Employees Based on Salary in Descending Order:
+
+sorted_employees = df.sort_values(by='Salary', ascending=False)
+print(sorted_employees)
